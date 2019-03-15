@@ -1,6 +1,7 @@
 import numpy as np
 
-class ReLU():
+
+class ReLU:
     def __int__(self):
         self.mask = None
 
