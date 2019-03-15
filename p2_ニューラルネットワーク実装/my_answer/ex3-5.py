@@ -19,7 +19,7 @@ class SoftmaxCrossEntropy:
         return np.average(np.sum(-self.t * np.log(self.y), axis=1))
 
     def backprop(self, dz):
-        return softmax(x) - self.t
+        return self.y - self.t
 
 
 x = np.array([[1.0, 0.5], [-0.4, 0.1]])
