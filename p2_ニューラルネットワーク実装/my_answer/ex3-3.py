@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class Softmax():
+class Softmax:
     def __int__(self):
         self.z = None
 
