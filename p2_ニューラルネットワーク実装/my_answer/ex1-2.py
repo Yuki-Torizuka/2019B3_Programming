@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class Perceptron:
     def __init__(self, w1, w2, theta):
         self.w1 = w1
