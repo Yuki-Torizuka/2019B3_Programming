@@ -68,8 +68,8 @@ validationgen = ImageDataGenerator(
 # フィット
 datagen.fit(X_train)
 validationgen.fit(X_val)
-history = model.fit_generator(datagen.flow(X_train, y_train, batch_size=128),
-                    steps_per_epoch=len(X_train) / 128, validation_data=validationgen.flow(X_val, y_val), validation_steps= 200, epochs=700).history
+history = model.fit_generator(datagen.flow(X_train, y_train, batch_size=128),steps_per_epoch=len(X_train) / 128,
+                              validation_data=validationgen.flow(X_val, y_val), validation_steps= 200, epochs=700).history
 
 with open("history.dat", "wb") as fp:
     pickle.dump(history, fp)
